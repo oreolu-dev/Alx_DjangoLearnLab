@@ -1,7 +1,7 @@
 # relationship_app/views.py
 
 from django.shortcuts import render
-from django.views.generic import DetailView
+from django.views.generic.detail import DetailView
 
 # Import models separately so the autograder sees them
 from .models import Book
