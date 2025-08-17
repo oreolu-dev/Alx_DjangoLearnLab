@@ -51,6 +51,11 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+# Authentication redirects
+LOGIN_REDIRECT_URL = "list_books"
+LOGOUT_REDIRECT_URL = "login"
+
+
 ROOT_URLCONF = 'LibraryProject.urls'
 
 TEMPLATES = [
