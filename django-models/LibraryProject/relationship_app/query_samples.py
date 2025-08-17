@@ -4,7 +4,7 @@ import django
 # -----------------------------
 # Setup Django environment
 # -----------------------------
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "django_models.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "LibraryProject.settings")
 django.setup()
 
 from relationship_app.models import Author, Book, Library, Librarian
@@ -37,6 +37,6 @@ def librarian_of_library(library_name):
 
 if __name__ == "__main__":
     # Replace these with actual data from your database
-    books_by_author("J.K. Rowling")
-    books_in_library("City Library")
-    librarian_of_library("City Library")
+    books_by_author("Chimamanda Ngozi Adichie")
+    books_in_library("President Obasanjo Library")
+    librarian_of_library("President Obasanjo Library")
